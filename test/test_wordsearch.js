@@ -35,4 +35,20 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+  it('should return true if the word is top to bottom', function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
+      ['Y', 'F', 'C', 'F', 'A', 'U', 'A', 'L'],
+      ['H', 'M', 'J', 'T', 'S', 'V', 'R', 'G'],
+      ['W', 'H', 'C', 'S', 'H', 'E', 'R', 'L'],
+      ['B', 'F', 'R', 'E', 'I', 'E', 'Y', 'B'],
+      ['U', 'B', 'T', 'W', 'O', 'P', 'A', 'I'],
+      ['O', 'D', 'C', 'A', 'N', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'FASHION')
+
+    assert.isTrue(result);
+  })
 });
+Í
